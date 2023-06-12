@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+   
+}
+
+body {
+    background: linear-gradient(45deg, #190361 0%, #BB00FF 100%);
+    font-size: 1.6rem;
+    
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+main {
+    background: #fff;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+    border-radius: .6rem;
+
+    width: min(42.8rem, 90%);
+}
+
+.hide {
+    display: none;
+}
+
+.view {
+    margin: 0 auto;
+    padding: 4.8rem
+}
+
+h1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: #34355B;
+}
+
+p {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    color: #34355B;
+    padding-top: 1.4rem;
+}
+
+p.luck {
+    opacity: 0; /* Começamos com o elemento invisível */
+    transform: translateY(50px); /* Definimos a posição inicial 50px abaixo da posição original */
+    animation: fadeInAndUp 2s ease-out forwards; /* Aplicamos a animação que definiremos a seguir */
+}
+
+@keyframes fadeInAndUp {
+    0% {
+        opacity: 0; /* No começo da animação, o elemento está invisível */
+        transform: translateY(50px); /* E está 50px abaixo da posição original */
+    }
+    100% {
+        opacity: 1; /* No fim da animação, o elemento está totalmente visível */
+        transform: translateY(0); /* E está na posição original */
+    }
+}
+
+
+.cookie {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+}
+
+.cookie:hover {
+    animation: treme 0.2s;
+    animation-iteration-count: 30;
+  }
+  
+  @keyframes treme {
+    0% {margin-left: 0;}
+    25% {margin-left: 10px;}
+    50% {margin-left: 0;}
+    75% {margin-left: -10px;}
+    100% {margin-left: 0;}
+    
+  }
+
+/* View 2 */
+
+.view2 {
+    margin: 0 auto;
+    padding: 4.8rem;
+    
+}
+
+.luck {
+    background: #E4EDF1;
+    box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+    padding: 1rem;
+    gap: 1rem;
+    margin: 1.7rem;
+
+    font-family: 'Dancing Script';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: #000;
+}
+
+.opened-cookie {
+    display: block;
+    margin: auto;
+    padding: 1.7rem 0;
+
+}
+
+.new-cookie {
+    display: block;
+    margin: auto;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+
+    width: 174px;
+    height: 52px;
+    background: #FF9500;
+    border: 0rem;
+    border-radius: 4px;
+    color: #fff;
+
+    cursor: pointer;
+
+
+
+}
+
+
